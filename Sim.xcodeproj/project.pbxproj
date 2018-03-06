@@ -17,6 +17,11 @@
 		E27B7CC6204E87BD00660B4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E27B7CC4204E87BD00660B4E /* LaunchScreen.storyboard */; };
 		E27B7CD1204E87BE00660B4E /* SimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27B7CD0204E87BE00660B4E /* SimTests.swift */; };
 		E27B7CDC204E87BE00660B4E /* SimUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27B7CDB204E87BE00660B4E /* SimUITests.swift */; };
+		E27B7CEA204E8D4C00660B4E /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27B7CE9204E8D4C00660B4E /* Entity.swift */; };
+		E27B7CEE204E918500660B4E /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27B7CED204E918500660B4E /* Level.swift */; };
+		E27B7CF0204E934A00660B4E /* Array2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27B7CEF204E934A00660B4E /* Array2D.swift */; };
+		E27B7CFA204EA4F800660B4E /* EntityHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27B7CF9204EA4F800660B4E /* EntityHandler.swift */; };
+		E27B7CFC204EA59900660B4E /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27B7CFB204EA59900660B4E /* Tile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,11 @@
 		E27B7CD7204E87BE00660B4E /* SimUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E27B7CDB204E87BE00660B4E /* SimUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimUITests.swift; sourceTree = "<group>"; };
 		E27B7CDD204E87BE00660B4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E27B7CE9204E8D4C00660B4E /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		E27B7CED204E918500660B4E /* Level.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
+		E27B7CEF204E934A00660B4E /* Array2D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array2D.swift; sourceTree = "<group>"; };
+		E27B7CF9204EA4F800660B4E /* EntityHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityHandler.swift; sourceTree = "<group>"; };
+		E27B7CFB204EA59900660B4E /* Tile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +118,11 @@
 				E27B7CB9204E87BD00660B4E /* Actions.sks */,
 				E27B7CBB204E87BD00660B4E /* GameScene.swift */,
 				E27B7CBD204E87BD00660B4E /* GameViewController.swift */,
+				E27B7CE9204E8D4C00660B4E /* Entity.swift */,
+				E27B7CF9204EA4F800660B4E /* EntityHandler.swift */,
+				E27B7CED204E918500660B4E /* Level.swift */,
+				E27B7CFB204EA59900660B4E /* Tile.swift */,
+				E27B7CEF204E934A00660B4E /* Array2D.swift */,
 				E27B7CBF204E87BD00660B4E /* Main.storyboard */,
 				E27B7CC2204E87BD00660B4E /* Assets.xcassets */,
 				E27B7CC4204E87BD00660B4E /* LaunchScreen.storyboard */,
@@ -270,9 +285,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E27B7CFA204EA4F800660B4E /* EntityHandler.swift in Sources */,
+				E27B7CEA204E8D4C00660B4E /* Entity.swift in Sources */,
+				E27B7CF0204E934A00660B4E /* Array2D.swift in Sources */,
 				E27B7CBC204E87BD00660B4E /* GameScene.swift in Sources */,
 				E27B7CBE204E87BD00660B4E /* GameViewController.swift in Sources */,
+				E27B7CEE204E918500660B4E /* Level.swift in Sources */,
 				E27B7CB6204E87BD00660B4E /* AppDelegate.swift in Sources */,
+				E27B7CFC204EA59900660B4E /* Tile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,7 +464,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = se.arvidboivie.Sim;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -458,7 +478,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = se.arvidboivie.Sim;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
